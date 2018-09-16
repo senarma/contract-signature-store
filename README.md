@@ -6,7 +6,7 @@ This contract validates signatures created by metamask, status and other web3 pr
 
 **Constructor**
 
-     SignatureContract.constructor(string _proofContract, address[] _signataries)
+     ContractStore.constructor(string _proofContract, address[] _signataries)
 
 
 You need to pass the _proofContract string, and a array of addresses allow to sign
@@ -15,32 +15,32 @@ You need to pass the _proofContract string, and a array of addresses allow to si
 
 **IsSigner**
 
-    SignatureContract.IsSigner(address _address)
+    ContractStore.IsSigner(address _address)
 You can pass an Ethereum Address and know if you can sign
 
 
 
 **getProofContract**
 
-    SignatureContract.getProofContract()
+    ContractStore.getProofContract()
 Return the string that need to be sign
 
 **SignContract**
 
-    SignatureContract.signContract(bytes _signature)
-You need to sign the string on proofContract using metamask of other web3 provider.
+    ContractStore.signContract(bytes _signature)
+Send the signature of the string on proofContract using metamask of other web3 provider.
 
 
 
 **getSignByAddress**
 
-    SignatureContract.getSignByAddress(address _address)
+    ContractStore.getSignByAddress(address _address)
 You pass an address and will be returned the signature of the user
 
 
 
 **getUnsigned**
-    SignatureContract.getUnsigned()
+    ContractStore.getUnsigned()
 Return the address that not sign the contract
 
 
