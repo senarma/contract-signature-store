@@ -1,6 +1,8 @@
 # contract-signature-store
 A Solidity contract to store Ethereum digital signature on Block Notal(https://blocknotal.com)
+
 This contract receive a String that need to be sign and a array of address who are authorized to sign.
+
 This contract validates signatures created by metamask, status and other web3 providers who join the prefix "Ethereum Signed Message:" with the signature.
 
 
